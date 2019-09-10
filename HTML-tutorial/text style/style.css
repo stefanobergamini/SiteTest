@@ -1,0 +1,23 @@
+h1 {
+    font-family: 'Akronim', cursive;
+    font-size: 29px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: left;
+    text-decoration: underline;
+    text-indent: 30px;
+    text-transform: uppercase;
+    color: #025321;
+    word-spacing: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 2, 2, 0.1);
+}
+
+p {
+    font-size: 22px;
+    line-height: 30px;
+    text-indent: 30px;
+}
