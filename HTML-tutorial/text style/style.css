@@ -8,7 +8,7 @@ h1 {
     text-indent: 30px;
     text-transform: uppercase;
     color: #025321;
-    word-spacing: 20px;
+    word-spacing: 20px; /*letter-spacing: */
 }
 
 a {
