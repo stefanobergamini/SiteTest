@@ -117,6 +117,9 @@ input, select {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #fff;
     width: 100%;
     height: 100px;
@@ -131,7 +134,7 @@ header .header-iron {
     display: block;
     margin: 0 auto;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 header nav ul {
@@ -142,7 +145,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    float: left;
+    
     list-style: none;
     padding: 0 16px;
     margin-bottom: 5px;
@@ -159,6 +162,14 @@ header .header-link {
     display: none;
 }
 
+
+@media only screen and (max-width: 500px) {
+    
+    header .header-iron {
+        font-size: 35px; 
+    }
+}
+
 /*
 
 
@@ -168,6 +179,10 @@ header .header-link {
 
 
 */
+main {
+    padding-top: 100px;
+}
+
 .index-banner {
     width: 100%;
     height: calc(100vh - 100px);
@@ -178,9 +193,27 @@ header .header-link {
     display: table;
 }
 
+
+
 .vertical-center {
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 50px;
+}
+
+.index-banner h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 40px;
+    font-weight: 555;
+    color: #fff;    
+    text-shadow: 3px 3px 10px #111;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    line-height: 50px;
 }
 
 .index-banner h2 {
@@ -231,9 +264,9 @@ header .header-link {
 */
 
 footer {
-    width: calc(100%-80);
+    width: calc(100% - 80px);
     padding: 40px 40px;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: rgb(128, 0, 0);
     overflow: hidden;
 }
@@ -284,6 +317,21 @@ footer ul li a {
         width: 1000px;
         margin: 0 auto;
     }
+
+    header .header-link {
+        display: block;
+        font-family: 'Bellefair', serif;
+        font-size: 20px;
+        color: #CC7839;
+        text-transform: uppercase;
+        line-height: 40px;
+        border: 1px solid #111;
+        float: right;
+        margin-right: 40px;
+        margin-top: 28px;
+        padding: 2px 50px;
+        background-color: #f3f3f3;
+    }
     
     header .header-iron {
         margin: 30px 0;
@@ -301,40 +349,7 @@ footer ul li a {
     header nav ul li a {
         line-height: 60px;
     }
-    header .header-link {
-        display: block;
-        font-family: 'Bellefair', serif;
-        font-size: 20px;
-        color: #CC7839;
-        text-transform: uppercase;
-        line-height: 40px;
-        border: 1px solid #111;
-        float: right;
-        margin-right: 40px;
-        margin-top: 28px;
-        padding: 2px 50px;
-        background-color: #f3f3f3;
-    }
-    .vertical-center {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        padding: 50px 0 50px 0;
-    }
     
-    .index-banner h2 {
-        font-family: 'Catamaran', sans-serif;
-        font-size: 40px;
-        font-weight: 555;
-        color: #fff;    
-        text-shadow: 3px 3px 10px #111;
-        -webkit-text-stroke: 1px black;
-        text-align: center;
-        line-height: 50px;
-    }
     .index-links {
         overflow: hidden;
     }
@@ -358,7 +373,115 @@ footer ul li a {
     .index-links div h3 {
         line-height: 230px;
     }
+    /*musicas versao só desktop dps fazer reactive*/
+    .show-links {
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
 
+    .show-links h2 {
+        font-family: 'Bellefair', serif;
+        font-size: 28px;
+        color: #CC7839;
+        text-transform: uppercase;
+    }
+
+    .show-links .wrapper div p {
+        padding-top: 45%;
+        text-align: center;
+        font-family: 'Bellefair', serif;
+        font-size: 25px;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    .show-links .wrapper div {
+        float: left;
+        width: 230px;
+        height: 230px;
+        margin: 20px 10px 0px;
+        
+    }
+    .aces {
+        background-image: url(imagens/CapaAcesHigh.jpg);
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: cover;
+    }
+    .slave {
+        background-image: url(imagens/CapaPowerSlave.jpg);
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: contain;
+    }
+    .mind {
+        background-image: url(imagens/CapaPieceOfMind.jpg);
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: contain;
+    }
+    .beast {
+        background-image: url(imagens/CapaNumberOfTheBeast.jpg);
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: contain;
+    }
+    .fear {
+        background-image: url(imagens/CapaFearOfTheDark.jpg);
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: cover;
+    }
+    .sign {
+        background-image: url(imagens/CapaSignOfTheCross.jpg);
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: cover;
+    }
+
+    /*pagina com videos*/
+
+    .wrapper-musica {
+        width: 1250px;
+        margin: 0 auto;
+    }
+
+    .musica video {
+        float: left;
+        margin: 20px 20px 30px;
+        border: 1px solid rgb(128, 0, 0);
+    }
+
+    .musica h2 {
+        font-family: 'Bellefair', serif;
+        font-size: 28px;
+        color: #CC7839;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .musica h3 {
+        font-family: 'Bellefair', serif;
+        font-size: 27px;
+        color: #CC7839;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .musica p {
+        font-family: 'Bellefair', serif;
+        font-size: 18px;
+        line-height: 24px;
+        color: #CC7839;
+        text-transform: uppercase;
+        height: 100%;
+        column-count: 2;
+        column-gap: 20px;
+    }
+    
     .footer-links-viagens {
         display: block;
         font-family: 'Bellefair', serif;
@@ -379,5 +502,6 @@ footer ul li a {
         line-height: 40px;
         text-transform: uppercase;
     }
+    
 
 }
