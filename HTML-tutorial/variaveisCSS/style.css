@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-color: #ccc;
+}
+
+.section-1 {
+    --text-size: 14px;
+}
+
+.section-1 p {
+    font-size: var(--text-size);
+}
+
+.section-2 p {
+    color: var(--text-color);
+}
+

@@ -1,0 +1,44 @@
+/*pseudo classes*/
+
+/*:root {
+
+}*/
+
+h1:hover {
+    color: red;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:active {
+    color: green;
+}
+
+.list-example-1 p:last-child {
+    color: cornflowerblue;
+}
+
+.list-example-1 p:nth-child(2n+1) {
+    color: pink;
+}
+
+/*pseudo elements*/
+
+.element1::first-line {
+    background-color: crimson;
+}
+
+.element2::first-letter {
+    background-color: darkgreen;
+}
+
+.element3::selection {
+    background-color: darkred;
+    color: deeppink;
+}
+
+.element4::before {
+    content: attr(stefano);
+}

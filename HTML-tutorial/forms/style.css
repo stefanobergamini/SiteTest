@@ -1,0 +1,44 @@
+form {
+    width: 300px;
+    display: flex;
+    margin: 10px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+input {
+    width: 100%;
+    
+}
+
+textarea {
+    resize: vertical;
+    max-height: 100px;
+}
+
+input, textarea {
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+    border: 1px solid #ddd;
+}
+
+::placeholder {
+    color: red;
+    opacity: 0.5;
+}
+
+:-ms-input-placeholder { /*edge*/
+    color: red;
+    opacity: 1;
+}
+
+::-ms-input-placeholder { /*IE*/
+    color: red;
+    opacity: 1;
+}
